@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    NSDictionary * defaults = @{kWarpFactorKey:@5,kWarpDriveKey:@"YES"};
+    [[NSUserDefaults standardUserDefaults]registerDefaults:defaults];
+    
+    
+    
     return YES;
 }
 
